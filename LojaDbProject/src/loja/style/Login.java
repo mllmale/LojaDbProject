@@ -1,17 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package loja.style;
 import java.sql.*;
 import dal.ModuloConexao;
 import javax.swing.JOptionPane;
 import java.awt.event.KeyEvent;
 
-/**
- *
- * @author leticia
- */
 public class Login extends javax.swing.JFrame {
     
     Connection conexao = null;
@@ -49,7 +41,6 @@ public class Login extends javax.swing.JFrame {
     }
 
     @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
@@ -143,28 +134,19 @@ public class Login extends javax.swing.JFrame {
 
         pack();
         setLocationRelativeTo(null);
-    }// </editor-fold>//GEN-END:initComponents
+    }
 
     private void entBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entBtnActionPerformed
         logar();
         
-    }//GEN-LAST:event_entBtnActionPerformed
+    }
 
     private void senTxtKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_senTxtKeyReleased
         if(evt.getKeyCode() == KeyEvent.VK_ENTER){
             logar();
         }
-    }//GEN-LAST:event_senTxtKeyReleased
-
-    /**
-     * @param args the command line arguments
-     */
+    }
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -181,17 +163,13 @@ public class Login extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
 
-        /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Login().setVisible(true);
             }
         });
     }
-
-    // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JToggleButton entBtn;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -199,5 +177,4 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTextField logTxt;
     private javax.swing.JPasswordField senTxt;
-    // End of variables declaration//GEN-END:variables
 }
